@@ -16,5 +16,7 @@ if idx == 1:
     print(((y - x) // 7))
 elif idx == 0:
     print(((y - x) // 7))
-elif idx > (y-x)%7:
+elif idx > ((y-x)%7)+1:
+    print(((y-x) // 7))
+elif idx <= ((y-x)%7)+1:
     print(((y-x) // 7) + 1)
