@@ -4,7 +4,7 @@ m1, d1, m2, d2 = map(int, input().split())
 
 Dow = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 
-month = [0,31,28,31,30,31,30,31,31,30,31,30,31]
+month = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 A = sum(month[:m1]) + d1
 B = sum(month[:m2]) + d2
