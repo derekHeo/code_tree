@@ -26,8 +26,8 @@ elif B > A:
         print(Dow[1])
     elif dw == 6:
         print(Dow[0])
-    elif dw >= 2:
-        print(Dow[dw])
+    elif dw >= 1:
+        print(Dow[dw+1])
 
 else:
     print('Mon')
