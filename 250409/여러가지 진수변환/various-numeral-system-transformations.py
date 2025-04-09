@@ -3,7 +3,7 @@ N, B = map(int, input().split())
 # Please write your code here.
 result = []
 while 1:
-    if N < 2:
+    if N < B:
         result.append(N)
         break
 
