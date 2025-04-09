@@ -5,7 +5,7 @@ n = input()
 
 num = 0
 for s in str(n):
-    num = num * 8 + int(s)
+    num = num * a + int(s)
 
 result = []
 while 1:
