@@ -6,25 +6,22 @@ for _ in range(n):
     x.append(int(xi))
     dir.append(di)
 
+num = 0
+num_list = []
 # Please write your code here.
-right_max = 0
-left_max = 0
 for i in range(n):
     if dir[i] == 'R':
-        right_max += x[i]
+        num += x[i]
+        num_list.append(num)
     else:
-        left_max += x[i]
+        num -= x[i]
+        num_list.append(num)
 
-max_len = right_max + left_max
-result = [0] * (max_len+1)
-
-if right_max >= left_max:
-    start = max_len - left_max
-else:
-    start = max_len - right_max
+start = abs(min(num_list))
 start_right = start + 1
 start_left = start
 
+result = [0]*(abs(min(num_list))+max(num_list)+100)
 for i in range(n):
     if dir[i] == 'R':
         for pos in range(x[i]):
