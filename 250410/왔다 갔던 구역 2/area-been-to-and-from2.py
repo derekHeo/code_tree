@@ -16,16 +16,16 @@ for i in range(n):
         left_max += x[i]
 
 max_len = right_max + left_max
-result = [0] * (max_len+2)
+result = [0] * (max_len+100)
 
-start = max_len - abs(right_max-left_max)
+start = max_len - abs(right_max-left_max) -1
 start_right = start + 1
 start_left = start
 
 for i in range(n):
     if dir[i] == 'R':
         for pos in range(x[i]):
-            result[start_right] += 1
+            result[start_left] += 1
             start_left += 1
             start_right += 1
     elif dir[i] == 'L':
