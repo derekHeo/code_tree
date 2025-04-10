@@ -16,7 +16,7 @@ for i in range(n):
         left_max += x[i]
 
 max_len = right_max + left_max
-result = [0] * (max_len+1)
+result = [0] * (max_len+2)
 
 start = max_len - abs(right_max-left_max)
 start_right = start + 1
